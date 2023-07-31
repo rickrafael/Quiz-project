@@ -29,23 +29,18 @@ form.addEventListener('submit', event => {
 
     switch(score){
       case 20:
-        scoreParagraph.textContent = 'Você acertou 20%'
         scoreParagraph.setAttribute('class', 'score-20')
         break
         case 40:
-          scoreParagraph.textContent = 'Você acertou 40%'
           scoreParagraph.setAttribute('class', 'score-40')
           break
-          case 60:
-            scoreParagraph.textContent = 'Você acertou 60%'
+          case 60:           
             scoreParagraph.setAttribute('class', 'score-60')
             break
-            case 80:
-              scoreParagraph.textContent = 'Você acertou 80%'
+            case 80:             
             scoreParagraph.setAttribute('class', 'score-80')
             break
-            case 100:
-              scoreParagraph.textContent = 'Parabéns ! Você acertou 100%'
+            case 100:         
               scoreParagraph.setAttribute('class', 'score-100')
 
     }
@@ -54,6 +49,20 @@ form.addEventListener('submit', event => {
 
   userAnswers.forEach(showScore)
 
-  
+  scrollTo(2000,2000)
 
+  let counter = 0
+
+  const timer = setInterval(() => {
+    counter++
+
+    if(counter === score){
+      clearInterval(timer)
+    }
+
+    scoreParagraph.textContent = `Você acertou ${counter}%`
+  }, 10);
+  
+  
 })
+
