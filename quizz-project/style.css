@@ -9,7 +9,7 @@ body{
 }
 
 header{
-  background-color: rgb(84, 63, 160);
+  background-image: linear-gradient(to right,#432295,#611ca7,#9646fe );
   padding: 30px;
 }
 
@@ -26,18 +26,19 @@ div.sub-title{
   font-family: 'Abel', sans-serif;
   font-size: 27px;
   color: white;
-  text-align: center;
+  text-align: justify;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.463);
   margin: 20px 0px ;
 }
 
 .quiz-content{
   position: relative;
-  text-align: justify;
+  text-align: center;
   padding-left: 25%;
 }
 
 .quiz-form{
+  
   position: absolute;
   
 }
@@ -52,10 +53,63 @@ div{
 
 p{
   font-size: 27;
-  background-color: rgba(0, 0, 0, 0.455);
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.518), rgba(0, 0, 0, 0.303)  );
   padding: 15px;
   border-radius: 10px;
 }
-button{
-  padding: 10px;
+
+.submit-btn{
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 15px;
+  border-style: none;
+  margin: 20px 0px;
+  background-color: #611ca7;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.49);
 }
+
+.score-20{
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: rgb(172, 39, 39);
+  margin: 15px 0px;
+
+}
+
+.score-40{
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color:rgb(213, 150, 34);
+  margin: 15px 0px;
+
+}
+
+.score-60{
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: rgb(220, 220, 46);
+  margin: 15px 0px;
+
+}
+
+.score-80{
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: rgb(50, 137, 236);
+  margin: 15px 0px;
+
+}
+
+.score-100{
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: rgb(25, 171, 25);
+  margin: 15px 0px;
+
+}
+
+

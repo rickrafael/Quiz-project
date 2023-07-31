@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queryes.css">
   <title>Quiz Histórico</title>
 </head>
 <body>
@@ -21,12 +22,13 @@
   </div>
   </header>
 
-  <div class="sub-title">
-    <h2>Você consegue acertar essas perguntas sobre História ?</h2>
-  </div>
-
   <section class="quiz-content">
     <form class="quiz-form">
+
+     <div class="sub-title">
+      <h2 class="h2-subTitle">Você consegue acertar essas perguntas sobre História ?</h2>
+     </div>
+
       <!--Div Question 1-->
       <div class="question1">
         <p class="p-question1">Aonde surgiu o termo 'tomar um cafézinho'? :</p>
@@ -67,7 +69,7 @@
        
       <!--Div Question 3-->
       <div class="question3">
-        <p class="p-question2">Qual país foi palco da maior revolução de todos os tempos ?</p>
+        <p class="p-question3">Qual país foi palco da maior revolução de todos os tempos ?</p>
         <div>
           <label class="check-label">
             <input type="radio" name="inputQuestion3" value='A'>
@@ -86,7 +88,7 @@
 
       <!--Div Question 4-->
       <div class="question4">
-        <p class="p-question2">Quem foram os primeiros negros trazidos como escravos ao Brasil ?</p>
+        <p class="p-question4">Quem foram os primeiros negros trazidos como escravos ao Brasil ?</p>
         <div>
           <label class="check-label">
             <input type="radio" name="inputQuestion4" value='A'>
@@ -105,24 +107,24 @@
 
       <!--Div Question 5-->
       <div class="question5">
-        <p class="p-question2">Em qual período histórico surgiu a Internet ? ?</p>
+        <p class="p-question5">Em qual período histórico surgiu a Internet ? ?</p>
         <div>
           <label class="check-label">
-            <input type="radio" name="inputQuestion4" value='A'>
+            <input type="radio" name="inputQuestion5" value='A'>
             Guerra Fria
           </label>
         </div>
 
           <div>
             <label class="check-label">
-              <input type="radio" name="inputQuestion4" value="B">
+              <input type="radio" name="inputQuestion5" value="B">
               Revolução Industrial
             </label>
           </div>
         </div>
       </div>
 
-     <button>Enviar Respostas</button>
+     <button class="submit-btn">Enviar Respostas</button>
     </form>
   </section>
 
