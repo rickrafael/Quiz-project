@@ -21,7 +21,14 @@ const animateFinalScore = () => {
 
     scoreParagraph.textContent = `Você acertou ${counter}%`
   }, 10);
+
   
+  
+}
+
+
+const resetUserScore = () => {
+  score = 0
 }
 
 form.addEventListener('submit', event => {
@@ -36,6 +43,9 @@ form.addEventListener('submit', event => {
     form.inputQuestion5.value
   ]
 
+
+  resetUserScore()
+  
  //calcula as respostas do usuário
   const showScore = (answer, index) => {
     if(answer === correctAnswers[index]){
@@ -75,6 +85,7 @@ form.addEventListener('submit', event => {
   })
 
   animateFinalScore()
+  
  
 })
 
